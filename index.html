@@ -1,199 +1,392 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lein's Beauty Studio | Luxury Salon & Spa</title>
+    
+    <title>Lein's Beauty Studio | Luxury Lashes, Makeup, Hair & Massage</title>
+    <meta name="description" content="Step into an exclusive world of luxury at Lein's Beauty Studio. Expert lash extensions, flawless professional makeup artistry, premium hair styling, and restorative massage wellness. Book via WhatsApp.">
+    <meta name="keywords" content="Luxury Salon, Lash Extensions, Makeup Artist, Hair Styling, Massage Therapy, Beauty Spa, Velvet Amethyst Studio">
+    <meta property="og:title" content="Lein's Beauty Studio | Luxury Salon & Spa">
+    <meta property="og:description" content="Experience master-tier aesthetic treatments designed to reveal your inner radiance. Easy booking via WhatsApp.">
+    <meta property="og:type" content="website">
+
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Montserrat:wght@200;300;400;500;600&display=swap" rel="stylesheet">
 
     <style>
         body {
             font-family: 'Montserrat', sans-serif;
-            background-color: #09090b;
+            background-color: #050206;
         }
         .serif-title {
             font-family: 'Cormorant Garamond', serif;
         }
-        /* Smooth Custom Glow Effects */
-        .gold-glow:hover {
-            box-shadow: 0 0 25px rgba(212, 175, 55, 0.2);
+        /* Custom Amethyst Modern Scrollbar Layer */
+        ::-webkit-scrollbar {
+            width: 6px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #050206;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #1e112a;
+            border-radius: 3px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #a78bfa;
         }
     </style>
 </head>
-<body class="text-gray-300 selection:bg-amber-500 selection:text-black">
+<body class="text-zinc-300 selection:bg-purple-500 selection:text-black antialiased">
 
-    <header class="fixed top-0 left-0 w-full z-50 bg-black/70 backdrop-blur-md border-b border-zinc-800/80 px-6 py-4">
+    <header class="fixed top-0 left-0 w-full z-50 bg-[#050206]/80 backdrop-blur-md border-b border-purple-950/30 px-6 py-4">
         <div class="max-w-7xl mx-auto flex items-center justify-between">
-            <a href="#" class="serif-title text-2xl font-bold tracking-widest text-amber-400">
+            <a href="#" class="serif-title text-2xl font-bold tracking-widest text-transparent bg-clip-text bg-gradient-to-r from-purple-200 to-fuchsia-400">
                 LEIN'S BEAUTY
             </a>
             <nav class="hidden md:flex space-x-8 text-xs uppercase tracking-widest font-medium">
-                <a href="#about" class="hover:text-amber-400 transition-colors">The Studio</a>
-                <a href="#services" class="hover:text-amber-400 transition-colors">Services</a>
-                <a href="#booking" class="hover:text-amber-400 transition-colors">Appointments</a>
+                <a href="#about" class="hover:text-purple-300 transition-colors">The Studio</a>
+                <a href="#services" class="hover:text-purple-300 transition-colors">Services</a>
+                <a href="#gallery" class="hover:text-purple-300 transition-colors">Gallery</a>
+                <a href="#pricing" class="hover:text-purple-300 transition-colors">Pricing</a>
+                <a href="#faq" class="hover:text-purple-300 transition-colors">FAQ</a>
             </nav>
-            <a href="https://wa.me/254106351077?text=Hi%20Lein's%20Beauty,%20I%27d%20like%20to%20book%20a%20session!" 
-               class="bg-amber-500 hover:bg-amber-400 text-black font-semibold text-xs uppercase tracking-wider px-5 py-2.5 rounded transition-all transform hover:-translate-y-0.5">
-                Book Now
+            <a href="https://wa.me/254784502460?text=Hi%20Lein%27s%20Beauty%20Studio%21%20I%20visited%20your%20site%20and%20want%20to%20reserve%20a%20luxury%20pampering%20session.%20Please%20share%20your%20available%20slots." 
+               class="bg-gradient-to-r from-purple-600 to-fuchsia-600 hover:from-purple-500 hover:to-fuchsia-500 text-white font-semibold text-xs uppercase tracking-wider px-5 py-2.5 rounded transition-all duration-300 transform hover:-translate-y-0.5 shadow-lg shadow-purple-500/10">
+                Book Session
             </a>
         </div>
     </header>
 
-    <section class="relative min-h-screen flex items-center justify-center bg-gradient-to-b from-zinc-950 via-zinc-900 to-black px-6 pt-20 overflow-hidden">
-        <div class="absolute top-1/4 left-1/4 -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-indigo-900/10 rounded-full blur-3xl pointer-events-none"></div>
-        <div class="absolute bottom-1/4 right-1/4 translate-x-1/2 translate-y-1/2 w-96 h-96 bg-amber-500/5 rounded-full blur-3xl pointer-events-none"></div>
+    <section class="relative min-h-screen flex items-center justify-center bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-zinc-950 via-[#0f0714] to-[#050206] px-6 pt-20 overflow-hidden">
+        <div class="absolute top-1/4 left-1/3 w-[500px] h-[500px] bg-purple-950/15 rounded-full blur-[120px] pointer-events-none"></div>
+        <div class="absolute bottom-1/4 right-1/3 w-[400px] h-[400px] bg-fuchsia-950/10 rounded-full blur-[100px] pointer-events-none"></div>
 
         <div class="max-w-4xl text-center z-10 space-y-8">
-            <span class="inline-block text-amber-500 font-semibold text-xs tracking-[0.3em] uppercase bg-amber-500/10 px-4 py-1.5 rounded-full border border-amber-500/20">
-                Premium Beauty Experiences
+            <span class="inline-block text-purple-400 font-medium text-xs tracking-[0.3em] uppercase bg-purple-500/5 px-4 py-1.5 rounded-full border border-purple-500/20 backdrop-blur-sm">
+                Exquisite Royal Aesthetics
             </span>
             <h1 class="serif-title text-5xl md:text-7xl font-bold text-white tracking-wide leading-tight">
-                Reveal Your Natural <br><span class="italic text-transparent bg-clip-text bg-gradient-to-r from-amber-200 via-amber-400 to-amber-500">Radiance & Glamour</span>
+                Where True Luxury <br><span class="italic font-light text-transparent bg-clip-text bg-gradient-to-r from-purple-100 via-purple-300 to-fuchsia-400">Meets Perfection</span>
             </h1>
             <p class="text-zinc-400 max-w-xl mx-auto text-sm md:text-base font-light leading-relaxed">
-                Step into a modern sanctuary engineered for luxury. From pristine custom lash definitions to exquisite glam transformations, we handle your aesthetic care seamlessly.
+                Step into a majestic dark sanctuary engineered for your ultimate refinement. Experience weighted dark volume lashes, tailored soft glam face maps, and elite neuromuscular therapies.
             </p>
             
-            <div class="pt-4 flex flex-col sm:flex-row items-center justify-center gap-4">
-                <a href="#services" class="w-full sm:w-auto border border-zinc-700 bg-zinc-900/40 hover:bg-zinc-800 text-white font-medium text-sm tracking-wide px-8 py-3.5 rounded transition-all">
-                    Explore Services
+            <div class="pt-4 flex flex-col sm:flex-row items-center justify-center gap-4 max-w-md mx-auto">
+                <a href="#services" class="w-full sm:w-auto text-center border border-zinc-800 bg-zinc-900/10 hover:bg-zinc-900 text-white font-medium text-sm tracking-wide px-8 py-3.5 rounded transition-all duration-300">
+                    View Treatments
                 </a>
-                <a href="https://wa.me/254106351077?text=Hi%20Lein's%20Beauty,%20I%27d%20like%20to%20inquire%20about%20your%20services." 
-                   class="w-full sm:w-auto bg-amber-500 hover:bg-amber-400 text-black font-semibold text-sm tracking-wide px-8 py-3.5 rounded shadow-lg shadow-amber-500/10 gold-glow transition-all">
-                    <i class="fab fa-whatsapp mr-2 text-base"></i>Chat with Us Instant
+                <a href="https://wa.me/254784502460?text=Hi%20Lein%27s%20Beauty%20Studio%21%20I%27m%20ready%20to%20experience%20your%20luxury%20treatments.%20Please%20guide%20me%20through%20your%20open%20slots%20for%20this%20week." 
+                   class="w-full sm:w-auto text-center bg-gradient-to-r from-purple-600 to-fuchsia-600 hover:from-purple-500 hover:to-fuchsia-500 text-white font-semibold text-sm tracking-wide px-8 py-3.5 rounded shadow-xl shadow-purple-500/10 transition-all duration-300 transform hover:-translate-y-0.5">
+                    <i class="fab fa-whatsapp mr-2 text-base"></i>Instant Booking Setup
                 </a>
             </div>
         </div>
     </section>
 
-    <section id="about" class="bg-black py-16 border-y border-zinc-900 px-6">
-        <div class="max-w-5xl mx-auto text-center grid grid-cols-2 md:grid-cols-4 gap-8">
-            <div>
-                <p class="serif-title text-3xl font-bold text-white">100%</p>
-                <p class="text-zinc-500 text-xs uppercase tracking-widest mt-1">Premium Care</p>
+    <section id="about" class="bg-[#030104] py-16 border-y border-purple-950/20 px-6">
+        <div class="max-w-6xl mx-auto grid grid-cols-2 lg:grid-cols-4 gap-8 text-center">
+            <div class="space-y-1">
+                <p class="serif-title text-4xl font-light text-purple-200">100%</p>
+                <p class="text-zinc-500 text-[10px] uppercase tracking-[0.2em]">Premium Product Safety</p>
             </div>
-            <div>
-                <p class="serif-title text-3xl font-bold text-white">Lash</p>
-                <p class="text-zinc-500 text-xs uppercase tracking-widest mt-1">Architects</p>
+            <div class="space-y-1">
+                <p class="serif-title text-4xl font-light text-purple-200">Bespoke</p>
+                <p class="text-zinc-500 text-[10px] uppercase tracking-[0.2em]">Lash Customization</p>
             </div>
-            <div>
-                <p class="serif-title text-3xl font-bold text-white">Bridal</p>
-                <p class="text-zinc-500 text-xs uppercase tracking-widest mt-1">Specialists</p>
+            <div class="space-y-1">
+                <p class="serif-title text-4xl font-light text-purple-200">Master</p>
+                <p class="text-zinc-500 text-[10px] uppercase tracking-[0.2em]">Bridal Artistry</p>
             </div>
-            <div>
-                <p class="serif-title text-3xl font-bold text-white">Luxury</p>
-                <p class="text-zinc-500 text-xs uppercase tracking-widest mt-1">Environment</p>
+            <div class="space-y-1">
+                <p class="serif-title text-4xl font-light text-purple-200">Private</p>
+                <p class="text-zinc-500 text-[10px] uppercase tracking-[0.2em]">Therapeutic Oasis</p>
             </div>
         </div>
     </section>
 
-    <section id="services" class="py-24 bg-gradient-to-b from-black to-zinc-950 px-6">
+    <section id="services" class="py-24 bg-[#09050c] px-6">
         <div class="max-w-7xl mx-auto space-y-16">
-            <div class="text-center space-y-4">
-                <h2 class="serif-title text-4xl md:text-5xl font-bold text-white tracking-wide">Our Selected Treatments</h2>
-                <div class="w-16 h-0.5 bg-amber-500 mx-auto rounded"></div>
-                <p class="text-zinc-500 text-sm max-w-md mx-auto">Meticulously targeted transformations executed with master-tier detailing.</p>
+            <div class="text-center space-y-3">
+                <h2 class="serif-title text-4xl md:text-5xl font-bold text-white tracking-wide">Signature Treatments</h2>
+                <div class="w-12 h-[1px] bg-purple-500 mx-auto"></div>
+                <p class="text-zinc-500 text-sm max-w-sm mx-auto font-light">Engineered to elevate your aesthetic contours flawlessly.</p>
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-                
-                <div class="bg-zinc-900/30 border border-zinc-800/60 p-8 rounded hover:border-amber-500/30 transition-all flex flex-col justify-between group">
+                <div class="bg-zinc-900/10 border border-zinc-900 rounded-xl p-8 flex flex-col justify-between group hover:border-purple-500/20 hover:bg-zinc-900/30 transition-all duration-300">
                     <div class="space-y-4">
-                        <div class="text-amber-400 text-2xl group-hover:transform group-hover:scale-110 transition-transform duration-300">
-                            <i class="fa-solid fa-eye"></i>
-                        </div>
-                        <h3 class="serif-title text-xl font-semibold text-white">Premium Lashes</h3>
-                        <p class="text-zinc-400 text-xs font-light leading-relaxed">
-                            Custom design configurations shaped meticulously to balance your eye profiles with striking volume and weightless structure.
-                        </p>
+                        <div class="text-purple-400 text-2xl"><i class="fa-solid fa-eye"></i></div>
+                        <h3 class="serif-title text-xl font-medium text-white tracking-wide">Premium Lashes</h3>
+                        <p class="text-zinc-400 text-xs font-light leading-relaxed">Custom mapped mapping frameworks engineered to enrich your natural profiles with precise weightless structure.</p>
                     </div>
-                    <div class="pt-6 border-t border-zinc-800/80 mt-6 flex justify-between items-center">
-                        <span class="text-xs uppercase text-zinc-500 font-medium tracking-wider">Appointment Lock</span>
-                        <a href="https://wa.me/254106351077?text=I%20want%20to%20book%20a%20Lash%20Extension%20session" class="text-amber-400 text-xs font-semibold hover:underline"><i class="fa-solid fa-arrow-right"></i></a>
-                    </div>
+                    <a href="https://wa.me/254784502460?text=Hi%20Lein%27s%20Beauty%21%20I%20would%20like%20to%20book%20an%20appointment%20for%20your%20Premium%20Lash%20Extensions%20treatment." 
+                       class="mt-6 pt-4 border-t border-zinc-900 flex justify-between items-center text-xs uppercase tracking-wider text-zinc-500 group-hover:text-purple-400 transition-colors">
+                        <span>Book Selection</span><i class="fa-solid fa-arrow-right text-[10px]"></i>
+                    </a>
                 </div>
 
-                <div class="bg-zinc-900/30 border border-zinc-800/60 p-8 rounded hover:border-amber-500/30 transition-all flex flex-col justify-between group">
+                <div class="bg-zinc-900/10 border border-zinc-900 rounded-xl p-8 flex flex-col justify-between group hover:border-purple-500/20 hover:bg-zinc-900/30 transition-all duration-300">
                     <div class="space-y-4">
-                        <div class="text-amber-400 text-2xl group-hover:transform group-hover:scale-110 transition-transform duration-300">
-                            <i class="fa-solid fa-wand-magic-sparkles"></i>
-                        </div>
-                        <h3 class="serif-title text-xl font-semibold text-white">Expert Makeup</h3>
-                        <p class="text-zinc-400 text-xs font-light leading-relaxed">
-                            Bespoke bridal highlights, flawless soft glam layers, and editorial finishes curated for unforgettable corporate high-impact events.
-                        </p>
+                        <div class="text-purple-400 text-2xl"><i class="fa-solid fa-wand-magic-sparkles"></i></div>
+                        <h3 class="serif-title text-xl font-medium text-white tracking-wide">Professional Makeup</h3>
+                        <p class="text-zinc-400 text-xs font-light leading-relaxed">Exquisite soft glam, deep runway matrices, and high-impact custom bridal treatments suited for milestones.</p>
                     </div>
-                    <div class="pt-6 border-t border-zinc-800/80 mt-6 flex justify-between items-center">
-                        <span class="text-xs uppercase text-zinc-500 font-medium tracking-wider">Appointment Lock</span>
-                        <a href="https://wa.me/254106351077?text=I%20want%20to%20book%20a%20Professional%20Makeup%20session" class="text-amber-400 text-xs font-semibold hover:underline"><i class="fa-solid fa-arrow-right"></i></a>
-                    </div>
+                    <a href="https://wa.me/254784502460?text=Hi%20Lein%27s%20Beauty%21%20I%20would%20like%20to%20book%20an%20appointment%20for%20your%20Professional%20Makeup%20session." 
+                       class="mt-6 pt-4 border-t border-zinc-900 flex justify-between items-center text-xs uppercase tracking-wider text-zinc-500 group-hover:text-purple-400 transition-colors">
+                        <span>Book Selection</span><i class="fa-solid fa-arrow-right text-[10px]"></i>
+                    </a>
                 </div>
 
-                <div class="bg-zinc-900/30 border border-zinc-800/60 p-8 rounded hover:border-amber-500/30 transition-all flex flex-col justify-between group">
+                <div class="bg-zinc-900/10 border border-zinc-900 rounded-xl p-8 flex flex-col justify-between group hover:border-purple-500/20 hover:bg-zinc-900/30 transition-all duration-300">
                     <div class="space-y-4">
-                        <div class="text-amber-400 text-2xl group-hover:transform group-hover:scale-110 transition-transform duration-300">
-                            <i class="fa-solid fa-scissors"></i>
-                        </div>
-                        <h3 class="serif-title text-xl font-semibold text-white">Hair Styling</h3>
-                        <p class="text-zinc-400 text-xs font-light leading-relaxed">
-                            Precision updates, premium texture management setups, and specialized custom styling matrices optimized to lock look-books.
-                        </p>
+                        <div class="text-purple-400 text-2xl"><i class="fa-solid fa-scissors"></i></div>
+                        <h3 class="serif-title text-xl font-medium text-white tracking-wide">Hair Styling</h3>
+                        <p class="text-zinc-400 text-xs font-light leading-relaxed">Advanced structural maintenance configurations, cuts, texture optimizations, and sleek modern catalogs.</p>
                     </div>
-                    <div class="pt-6 border-t border-zinc-800/80 mt-6 flex justify-between items-center">
-                        <span class="text-xs uppercase text-zinc-500 font-medium tracking-wider">Appointment Lock</span>
-                        <a href="https://wa.me/254106351077?text=I%20want%20to%20book%20a%20Hair%20Styling%20session" class="text-amber-400 text-xs font-semibold hover:underline"><i class="fa-solid fa-arrow-right"></i></a>
-                    </div>
+                    <a href="https://wa.me/254784502460?text=Hi%20Lein%27s%20Beauty%21%20I%20would%20like%20to%20book%20an%20appointment%20for%20your%20Hair%20Styling%20treatment." 
+                       class="mt-6 pt-4 border-t border-zinc-900 flex justify-between items-center text-xs uppercase tracking-wider text-zinc-500 group-hover:text-purple-400 transition-colors">
+                        <span>Book Selection</span><i class="fa-solid fa-arrow-right text-[10px]"></i>
+                    </a>
                 </div>
 
-                <div class="bg-zinc-900/30 border border-zinc-800/60 p-8 rounded hover:border-amber-500/30 transition-all flex flex-col justify-between group">
+                <div class="bg-zinc-900/10 border border-zinc-900 rounded-xl p-8 flex flex-col justify-between group hover:border-purple-500/20 hover:bg-zinc-900/30 transition-all duration-300">
                     <div class="space-y-4">
-                        <div class="text-amber-400 text-2xl group-hover:transform group-hover:scale-110 transition-transform duration-300">
-                            <i class="fa-solid fa-spa"></i>
-                        </div>
-                        <h3 class="serif-title text-xl font-semibold text-white">Massage Therapy</h3>
-                        <p class="text-zinc-400 text-xs font-light leading-relaxed">
-                            Deeply restorative muscle treatments designed to relieve mental pressure systems and re-establish natural bodily alignment.
-                        </p>
+                        <div class="text-purple-400 text-2xl"><i class="fa-solid fa-spa"></i></div>
+                        <h3 class="serif-title text-xl font-medium text-white tracking-wide">Massage Therapy</h3>
+                        <p class="text-zinc-400 text-xs font-light leading-relaxed">Deep therapeutic muscle alignment sessions targeting neurological stress patterns for mental rejuvenation.</p>
                     </div>
-                    <div class="pt-6 border-t border-zinc-800/80 mt-6 flex justify-between items-center">
-                        <span class="text-xs uppercase text-zinc-500 font-medium tracking-wider">Appointment Lock</span>
-                        <a href="https://wa.me/254106351077?text=I%20want%20to%20book%20a%20Massage%20Therapy%20session" class="text-amber-400 text-xs font-semibold hover:underline"><i class="fa-solid fa-arrow-right"></i></a>
-                    </div>
+                    <a href="https://wa.me/254784502460?text=Hi%20Lein%27s%20Beauty%21%20I%20would%20like%20to%20book%20an%20appointment%20for%20your%20Massage%20Therapy%20treatment." 
+                       class="mt-6 pt-4 border-t border-zinc-900 flex justify-between items-center text-xs uppercase tracking-wider text-zinc-500 group-hover:text-purple-400 transition-colors">
+                        <span>Book Selection</span><i class="fa-solid fa-arrow-right text-[10px]"></i>
+                    </a>
                 </div>
-
             </div>
         </div>
     </section>
 
-    <section id="booking" class="py-20 bg-black border-t border-zinc-900 px-6">
-        <div class="max-w-4xl mx-auto bg-zinc-950 border border-zinc-800 p-8 md:p-12 rounded-lg text-center space-y-6 relative overflow-hidden">
-            <div class="absolute -top-10 -right-10 w-40 h-40 bg-amber-500/5 rounded-full blur-2xl"></div>
-            
-            <h3 class="serif-title text-3xl font-semibold text-white">Ready to Secure Your Slot?</h3>
+    <section id="gallery" class="py-24 bg-[#050206] px-6">
+        <div class="max-w-7xl mx-auto space-y-12">
+            <div class="flex flex-col md:flex-row md:items-end justify-between gap-6">
+                <div class="space-y-3">
+                    <h2 class="serif-title text-4xl font-bold text-white tracking-wide">The Look-Book</h2>
+                    <p class="text-zinc-500 text-xs uppercase tracking-widest">Real results executed inside our private studio environments.</p>
+                </div>
+                <div class="flex flex-wrap gap-2 text-[10px] uppercase tracking-widest font-semibold">
+                    <span class="px-4 py-2 bg-purple-600 text-white rounded cursor-pointer">All Work</span>
+                    <span class="px-4 py-2 bg-zinc-900 text-zinc-400 hover:text-white rounded cursor-pointer transition-colors">Lashes</span>
+                    <span class="px-4 py-2 bg-zinc-900 text-zinc-400 hover:text-white rounded cursor-pointer transition-colors">Glam</span>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="relative bg-zinc-900/30 rounded-xl aspect-[4/5] overflow-hidden group border border-zinc-900 hover:border-purple-950/40 transition-all">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/30 to-transparent z-10"></div>
+                    <div class="absolute bottom-6 left-6 z-20 space-y-1">
+                        <span class="text-[9px] uppercase tracking-widest text-purple-300 font-bold bg-purple-500/10 px-2 py-0.5 rounded">Lash Design</span>
+                        <p class="serif-title text-lg text-white font-medium">Hybrid Volume Extensions</p>
+                    </div>
+                </div>
+                <div class="relative bg-zinc-900/30 rounded-xl aspect-[4/5] overflow-hidden group border border-zinc-900 hover:border-purple-950/40 transition-all">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/30 to-transparent z-10"></div>
+                    <div class="absolute bottom-6 left-6 z-20 space-y-1">
+                        <span class="text-[9px] uppercase tracking-widest text-purple-300 font-bold bg-purple-500/10 px-2 py-0.5 rounded">Soft Glam</span>
+                        <p class="serif-title text-lg text-white font-medium">Satin Bridal Makeover</p>
+                    </div>
+                </div>
+                <div class="relative bg-zinc-900/30 rounded-xl aspect-[4/5] overflow-hidden group border border-zinc-900 hover:border-purple-950/40 transition-all">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/30 to-transparent z-10"></div>
+                    <div class="absolute bottom-6 left-6 z-20 space-y-1">
+                        <span class="text-[9px] uppercase tracking-widest text-purple-300 font-bold bg-purple-500/10 px-2 py-0.5 rounded">Therapy</span>
+                        <p class="serif-title text-lg text-white font-medium">Aromatherapy Alignment</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="pricing" class="py-24 bg-[#09050c] px-6">
+        <div class="max-w-4xl mx-auto space-y-16">
+            <div class="text-center space-y-3">
+                <h2 class="serif-title text-4xl font-bold text-white tracking-wide">Investment Matrix</h2>
+                <div class="w-12 h-[1px] bg-purple-500 mx-auto"></div>
+                <p class="text-zinc-500 text-xs uppercase tracking-widest">Transparent tier systems built on pure precision values.</p>
+            </div>
+
+            <div class="bg-zinc-900/10 border border-zinc-900/80 rounded-xl overflow-hidden backdrop-blur-sm">
+                <div class="bg-purple-950/10 px-6 py-3 border-b border-zinc-900 text-xs font-semibold tracking-widest text-purple-300 uppercase">
+                    Lash Artistry & Face Glam
+                </div>
+                <div class="divide-y divide-zinc-900/60">
+                    <div class="p-6 flex items-center justify-between hover:bg-zinc-900/10 transition-colors">
+                        <div>
+                            <h4 class="font-medium text-white text-sm">Classic Lash Set</h4>
+                            <p class="text-zinc-500 text-xs mt-1 font-light">Natural configuration mapping using premium fine-strand clusters.</p>
+                        </div>
+                        <div class="text-right">
+                            <a href="https://wa.me/254784502460?text=Hi%20Lein%27s%20Beauty%21%20I%20want%20to%20book%20the%20Classic%20Lash%20Set%20treatment.%20Please%20verify%20slots." 
+                               class="inline-block bg-zinc-900 border border-zinc-800 text-purple-400 text-xs px-4 py-2 rounded hover:border-purple-500 transition-all font-medium">
+                                Enquire Rate
+                            </a>
+                        </div>
+                    </div>
+                    <div class="p-6 flex items-center justify-between hover:bg-zinc-900/10 transition-colors">
+                        <div>
+                            <h4 class="font-medium text-white text-sm">Full Bridal / Occasion Glam</h4>
+                            <p class="text-zinc-500 text-xs mt-1 font-light">High-definition waterproof layout contours including professional photography prep.</p>
+                        </div>
+                        <div class="text-right">
+                            <a href="https://wa.me/254784502460?text=Hi%20Lein%27s%20Beauty%21%20I%20want%20to%20book%20the%20Full%20Bridal%20%2F%20Occasion%20Glam%20treatment.%20Please%20verify%20slots." 
+                               class="inline-block bg-zinc-900 border border-zinc-800 text-purple-400 text-xs px-4 py-2 rounded hover:border-purple-500 transition-all font-medium">
+                                Enquire Rate
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-purple-950/10 px-6 py-3 border-t border-zinc-900 border-b text-xs font-semibold tracking-widest text-purple-300 uppercase">
+                    Hair Sculpting & Wellness Care
+                </div>
+                <div class="divide-y divide-zinc-900/60">
+                    <div class="p-6 flex items-center justify-between hover:bg-zinc-900/10 transition-colors">
+                        <div>
+                            <h4 class="font-medium text-white text-sm">Premium Hair Routine & Cut</h4>
+                            <p class="text-zinc-500 text-xs mt-1 font-light">Advanced structural washing, hydration treatments, and modern aesthetic cuts.</p>
+                        </div>
+                        <div class="text-right">
+                            <a href="https://wa.me/254784502460?text=Hi%20Lein%27s%20Beauty%21%20I%20want%20to%20book%20the%20Premium%20Hair%20Routine%20treatment.%20Please%20verify%20slots." 
+                               class="inline-block bg-zinc-900 border border-zinc-800 text-purple-400 text-xs px-4 py-2 rounded hover:border-purple-500 transition-all font-medium">
+                                Enquire Rate
+                            </a>
+                        </div>
+                    </div>
+                    <div class="p-6 flex items-center justify-between hover:bg-zinc-900/10 transition-colors">
+                        <div>
+                            <h4 class="font-medium text-white text-sm">Deep Tissue / Stress Therapy</h4>
+                            <p class="text-zinc-500 text-xs mt-1 font-light">60-minute systemic neuromuscular manipulation focused on maximum detoxification.</p>
+                        </div>
+                        <div class="text-right">
+                            <a href="https://wa.me/254784502460?text=Hi%20Lein%27s%20Beauty%21%20I%20want%20to%20book%20the%20Deep%20Tissue%20%2F%20Stress%20Therapy%20treatment.%20Please%20verify%20slots." 
+                               class="inline-block bg-zinc-900 border border-zinc-800 text-purple-400 text-xs px-4 py-2 rounded hover:border-purple-500 transition-all font-medium">
+                                Enquire Rate
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="faq" class="py-24 bg-[#050206] px-6">
+        <div class="max-w-3xl mx-auto space-y-12">
+            <div class="text-center space-y-3">
+                <h2 class="serif-title text-4xl font-bold text-white tracking-wide">Frequently Asked Questions</h2>
+                <div class="w-12 h-[1px] bg-purple-500 mx-auto"></div>
+                <p class="text-zinc-500 text-xs uppercase tracking-widest">Everything you need to know about your session parameters.</p>
+            </div>
+
+            <div class="space-y-4">
+                <details class="group bg-zinc-900/20 border border-zinc-900 rounded-xl p-6 [&_summary::-webkit-details-marker]:hidden cursor-pointer hover:border-purple-950/40 transition-colors">
+                    <summary class="flex items-center justify-between text-white font-medium text-sm">
+                        <span>How long do the Premium Lash Extensions typically last?</span>
+                        <span class="transition duration-300 group-open:-rotate-180 text-purple-400"><i class="fa-solid fa-chevron-down"></i></span>
+                    </summary>
+                    <p class="mt-4 text-zinc-400 text-xs leading-relaxed font-light">
+                        Our premium lash sets stay intact for roughly 4 to 6 weeks depending entirely on your natural lash growth cycle and care routines. We recommend scheduling a mini-infill session every 2 to 3 weeks to maintain full weightless volume.
+                    </p>
+                </details>
+
+                <details class="group bg-zinc-900/20 border border-zinc-900 rounded-xl p-6 [&_summary::-webkit-details-marker]:hidden cursor-pointer hover:border-purple-950/40 transition-colors">
+                    <summary class="flex items-center justify-between text-white font-medium text-sm">
+                        <span>Do I need to place an upfront deposit to secure an appointment slot?</span>
+                        <span class="transition duration-300 group-open:-rotate-180 text-purple-400"><i class="fa-solid fa-chevron-down"></i></span>
+                    </summary>
+                    <p class="mt-4 text-zinc-400 text-xs leading-relaxed font-light">
+                        Yes. To respect our clean-window scheduled time frames, we implement a standard 40% commitment down payment for specialized bridal glams and extensive treatments. The outstanding balance is cleared immediately after the service.
+                    </p>
+                </details>
+
+                <details class="group bg-zinc-900/20 border border-zinc-900 rounded-xl p-6 [&_summary::-webkit-details-marker]:hidden cursor-pointer hover:border-purple-950/40 transition-colors">
+                    <summary class="flex items-center justify-between text-white font-medium text-sm">
+                        <span>Are home visits or corporate off-site services available?</span>
+                        <span class="transition duration-300 group-open:-rotate-180 text-purple-400"><i class="fa-solid fa-chevron-down"></i></span>
+                    </summary>
+                    <p class="mt-4 text-zinc-400 text-xs leading-relaxed font-light">
+                        Absolutely. While our private velvet oasis studio offers the best luxury gear environment, off-site packages for large bridal groups, media campaigns, or events can be explicitly requested through our active WhatsApp routing link.
+                    </p>
+                </details>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 bg-[#030104] border-t border-purple-950/20 px-6">
+        <div class="max-w-4xl mx-auto bg-gradient-to-br from-zinc-950 to-[#0f0714] border border-purple-950/30 p-8 md:p-12 rounded-2xl text-center space-y-6 relative overflow-hidden">
+            <h3 class="serif-title text-3xl font-semibold text-white">Secure Your Experience Time Window</h3>
             <p class="text-zinc-400 max-w-md mx-auto text-sm font-light leading-relaxed">
-                We operate strictly on clean-window pre-scheduled time matrices to maximize personalized client safety and execution metrics.
+                We operate strictly on clean-window pre-scheduled slots to maintain zero wait periods and complete personal privacy.
             </p>
             <div class="inline-block pt-2">
-                <a href="https://wa.me/254106351077?text=Hi%20Lein%27s%20Beauty%20Studio%2C%20I%20would%20like%20to%20schedule%20an%20appointment%20with%20you%20soon." 
-                   class="bg-amber-500 hover:bg-amber-400 text-black font-semibold text-xs uppercase tracking-widest px-8 py-4 rounded transition-all block sm:inline-block">
-                    <i class="fab fa-whatsapp mr-2 text-sm"></i>Request Appointment via WhatsApp
+                <a href="https://wa.me/254784502460?text=Hi%20Lein%27s%20Beauty%20Studio%21%20I%20am%20ready%20to%20secure%20a%20confirmed%20appointment%20slot%20with%20your%20lead%20beautician.%20Please%20let%20me%20know%20what%20details%20you%20need." 
+                   class="bg-gradient-to-r from-purple-600 to-fuchsia-600 hover:from-purple-400 hover:to-fuchsia-400 text-white font-semibold text-xs uppercase tracking-widest px-8 py-4 rounded-xl transition-all duration-300 block sm:inline-block shadow-xl shadow-purple-500/5">
+                    <i class="fab fa-whatsapp mr-2 text-sm"></i>Request Live Slot via WhatsApp
                 </a>
             </div>
-            <p class="text-zinc-500 text-xs">Typical confirmation turnaround: Under 15 Minutes</p>
+            <p class="text-zinc-500 text-[11px] tracking-wide">Average response tracking window: Under 15 Minutes</p>
         </div>
     </section>
 
-    <footer class="bg-zinc-950 py-10 border-t border-zinc-900 text-center text-zinc-600 text-xs space-y-4 px-6">
+    <footer class="bg-[#050206] py-12 border-t border-zinc-900 text-center text-zinc-600 text-xs space-y-4 px-6">
         <p class="serif-title text-base font-bold text-zinc-400 tracking-widest">LEIN'S BEAUTY STUDIO</p>
-        <p>&copy; 2026 Lein's Beauty Studio. All Rights Reserved.</p>
-        <div class="text-[10px] text-zinc-700 uppercase tracking-widest pt-2">
-            Engineered proudly by <span class="text-zinc-500 font-semibold">OTF Solutions Ltd</span>
+        <div class="flex justify-center space-x-4 text-[11px] font-medium tracking-wider text-purple-400/80">
+            <button onclick="toggleModal(true)" class="hover:underline hover:text-purple-300">Terms & Conditions</button>
+        </div>
+        <p class="text-zinc-600 mt-2">&copy; 2026 Lein's Beauty Studio. All Rights Reserved.</p>
+        <div class="text-[9px] text-zinc-700 uppercase tracking-widest pt-4">
+            Technical Architecture Deployed by <span class="text-zinc-500 font-medium">OTF Solutions Ltd</span>
         </div>
     </footer>
+
+    <div id="termsModal" class="fixed inset-0 z-50 bg-black/80 backdrop-blur-sm flex items-center justify-center p-4 hidden">
+        <div class="bg-[#09050c] border border-purple-950/50 max-w-xl w-full rounded-2xl max-h-[80vh] overflow-y-auto p-8 space-y-6 text-left">
+            <div class="flex items-center justify-between border-b border-zinc-900 pb-4">
+                <h3 class="serif-title text-2xl font-bold text-white tracking-wide">Studio Terms & Conditions</h3>
+                <button onclick="toggleModal(false)" class="text-zinc-500 hover:text-white text-lg"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+            <div class="space-y-4 text-xs text-zinc-400 font-light leading-relaxed">
+                <p>By scheduling an appointment window with Lein's Beauty Studio, you signify complete alignment with the following operational guidelines:</p>
+                <h4 class="font-semibold text-purple-300 uppercase tracking-wider text-[10px]">1. Deposit & Booking Rule</h4>
+                <p>Certain high-impact transformations (such as specialized Bridal Glam or intensive Hair/Massage frameworks) require a mandatory <strong>40% upfront deposit tracking rate</strong>. Bookings are not locked into our calendar until transaction clearing protocols are complete.</p>
+                <h4 class="font-semibold text-purple-300 uppercase tracking-wider text-[10px]">2. Grace Periods & Cancellations</h4>
+                <p>We honor a strict <strong>15-minute structural grace arrival window</strong>. Delays exceeding this timeframe without prior notice may result in immediate slot cancellation or adaptive restructuring to ensure subsequent client schedules remain unimpacted.</p>
+                <h4 class="font-semibold text-purple-300 uppercase tracking-wider text-[10px]">3. Utility Liability Clause</h4>
+                <p>All core infrastructure system variables engineered to host this digital app portfolio are subject to hosting rules managed through developer covenants validated by <strong>OTF Solutions Ltd</strong>.</p>
+            </div>
+            <div class="pt-4 border-t border-zinc-900 text-right">
+                <button onclick="toggleModal(false)" class="bg-purple-600 hover:bg-purple-500 text-white font-medium text-xs uppercase tracking-wider px-6 py-2.5 rounded-lg transition-colors">
+                    I Understand
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function toggleModal(show) {
+            const modal = document.getElementById('termsModal');
+            if (show) {
+                modal.classList.remove('hidden');
+                document.body.style.overflow = 'hidden';
+            } else {
+                modal.classList.add('hidden');
+                document.body.style.overflow = 'auto';
+            }
+        }
+    </script>
 
 </body>
 </html>
